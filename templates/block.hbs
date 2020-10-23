@@ -1,0 +1,37 @@
+{{#if details}}
+  <div>
+    <span class="p-title">{{fa-icon "info-circle" fixedWidth=true}} Info</span>
+  </div>
+  {{#each details as |result index|}}
+      {{#if result.title}}
+        <div>
+            <span class="p-key">Report Title: </span>
+            <span class="p-value"><a href="{{result.url}}">{{result.title}} {{fa-icon "external-link-square" class="external-link-icon"}}</a><br></span>
+        </div>
+      {{/if}}
+      {{#if result.post_date}}
+        <div>
+            <span class="p-key">Date Posted: </span>
+            <span class="p-value">{{result.post_date}}</span>
+        </div>
+      {{/if}}
+      {{#if result.tags}}
+        <div>
+            <span class="p-key">Report Tags: </span>
+            <span class="p-value">{{result.tags}}</span>
+        </div>
+      {{/if}}
+      <div>
+        <span class="p-title">{{fa-icon "align-justify" fixedWidth=true}} Description</span>
+      </div>
+      <div class="description-container">
+          {{#if result.short_description}}
+            <div>
+                <span class="p-value">{{result.short_description}}</span>
+            </div>
+          {{/if}}
+      </div>
+      <hr>
+  {{/each}}
+
+{{/if}}
