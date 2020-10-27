@@ -1,6 +1,6 @@
-# Polarity Advanced Intelligence LLC, Threat Intel Reporting (TIR) Integration
+# Polarity Andariel Threat Intel Report (TIR) Search Integration
 
-The Polarity TIR integration allows indicator searches across the Advanced Intelligence reporting archive.
+This integration queries various indicator types against the Andariel Threat Intel Report (TIR) archive.
 
 Check out a snapshot if the integration below: 
 
